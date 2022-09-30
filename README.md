@@ -1,17 +1,17 @@
-# HashTables
+# HashTables<br>
 
-Authorship: Isabella Tang
+Authorship: Isabella Tang<br>
 
-Acknowledgements: Mr. Kuszmaul, Introduction to Algorithims
+Acknowledgements: Mr. Kuszmaul, Introduction to Algorithims<br>
 
-Methods: 
-|DAHT|
-Constructor - takes array size and initializes new array of DA objects
-Insert - Takes DA object and puts object into array
-Delete - Takes DA and deletes the object at the array
-Search - Takes key and returns the DA object at that index
+Methods: <br>
+|DAHT|<br>
+Constructor - takes array size and initializes new array of DA objects <br>
+Insert - Takes DA object and puts object into array<br>
+Delete - Takes DA and deletes the object at the array<br>
+Search - Takes key and returns the DA object at that index<br>
 
-|DA|
-Constructor - sets object with key val
-getKey - returns key
-getVal - returns val
+|DA|<br>
+Constructor - sets object with key val<br>
+getKey - returns key<br>
+getVal - returns val<br>
