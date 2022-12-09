@@ -9,13 +9,16 @@ public class DAHT {
         HTsize = size;
     }
 
+    
     public void insert(DA data){
+        //prevent collisions
         if(HT[data.getKey()]!=null){
             System.out.println("Index already occupied");
             throw new ArrayIndexOutOfBoundsException();
         }
         else HT[data.getKey()] = data;
         //Overflow+underflow
+        //Makes key = to index and makes it correspond to the data
     }
 
     public void delete(DA data){
@@ -33,7 +36,7 @@ public class DAHT {
 
     }
 
-
+//world's most complex hash (I don't remember writing this)
     public int hash(int key){
         return key;
     }
