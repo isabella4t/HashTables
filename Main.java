@@ -25,6 +25,7 @@ public class Main {
         else fail++;
     }
 
+    //testing in index
     public static void testInsert1(){
         DAHT oo = new DAHT(3);
         DA datu = new DA(0,3);
@@ -38,6 +39,8 @@ public class Main {
         }
 
     }
+    
+    //Testing out of index
     public static void testInsert2(){
         DAHT me = new DAHT(1);
         DA dato = new DA(3,3);
@@ -48,8 +51,10 @@ public class Main {
     catch (ArrayIndexOutOfBoundsException e){
         System.out.println("testInsert2: Array Index out of bounds exception,pass");
         pass++;
+     }
     }
-    }
+    
+    //testing collisions
     public static void testInsert3(){
         DAHT me = new DAHT(2);
         DA a = new DA(1,5);
@@ -66,6 +71,7 @@ public class Main {
         }
     }
 
+    //test deletion
     public static void testDelete1(){
         DAHT me = new DAHT(7);
         me.insert(new DA(1,5));
@@ -89,6 +95,8 @@ public class Main {
         }
 
     }
+    
+    //test deleting nonexistant item
     public static void testDelete2(){
         DAHT me = new DAHT(7);
         me.insert(new DA(1,5));
@@ -104,6 +112,8 @@ public class Main {
         }
 
     }
+    
+    //test deleting nonexistant item
     public static void testDelete3(){
         DAHT me = new DAHT(7);
         me.insert(new DA(1,5));
@@ -120,6 +130,7 @@ public class Main {
 
     }
 
+    //test return existing item
     public static void testSearch1(){
         DAHT me = new DAHT(7);
         me.insert(new DA(1,5));
@@ -141,6 +152,8 @@ public class Main {
             fail++;
         }
     }
+    
+    //test searching out of index
     public static void testSearch2(){
         DAHT me = new DAHT(4);
         me.insert(new DA(1,5));
